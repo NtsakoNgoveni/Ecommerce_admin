@@ -1,0 +1,432 @@
+a{
+    text-decoration: none;
+}
+.App{
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    font-family: sans-serif;
+    margin-left:1%;
+}
+.side_panel{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.side_panel > a{
+    color:#808080;
+    text-decoration: none;
+    vertical-align: center;
+}
+.side_panel > a:hover{
+    border-radius: 8px;
+    background-color: purple;
+}
+.side_panel_icon{
+    display: inline-block;
+    width: 50px;
+    height:50px;
+    margin:0;
+    padding: 0;
+}
+.side_panel_icon >img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+.side_items{
+    display: flex;
+    gap:5px;
+    align-items: center;
+    width: 90%;
+    margin: 5px;
+    padding:10px;
+}
+
+/*DASHBOARD*/
+.dash_nav{
+    font-size:26px;
+    display:flex;
+    justify-content: space-between;
+}
+.user_alias{
+    padding: 25px;
+    border-radius:50%;
+    background-color: #fd5c63;
+    color:white;
+    font-family: cursive;
+    font-size: 22px;
+    margin-right: 2%;
+ 
+}
+.dash_orders{
+    display:grid;
+    margin-right:35px;
+    gap:10px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom:40px;
+}
+.dash_order_items{
+    box-sizing: border-box;
+    font-size: 1.8rem;
+    text-align: center;
+    height:180px;
+    line-height: 10px;
+    box-shadow: -1px 1px 14px -7px rgba(0,0,0,1);
+    -webkit-box-shadow: -1px 1px 14px -7px rgba(0,0,0,1);
+    -moz-box-shadow: -1px 1px 14px -7px rgba(0,0,0,1);
+}
+.dash_ordernum{
+    font-size:3rem;
+    color:#1F305E;
+}
+.dash_day{
+    color:#484848;
+}
+.dash_statement{
+    color:#808080;
+    font-size: 1.5rem;
+}
+
+/*PRODUCTS */
+.products{
+    margin-top:35px;
+    max-width:80%;
+}
+.products_name_column{
+    border-bottom: 2px solid lightgrey;
+    padding-bottom: 10px;
+    color:#808080;
+    font-size: 1.5rem;
+}
+.products_items{
+    margin-bottom:20px;
+}
+.products_name{
+    margin-top: 0;
+    padding-top:0;
+    display: inline-block;
+    width:50%;
+    font-size: 1.5rem;
+}
+.products_editbtn{
+    margin-right:10px;
+    background-color: #0CAFFF;
+    color:white;
+    border:none;
+    font-size: 1.3rem;
+    padding:3px 25px;
+    border-radius:5px;
+    cursor: pointer;
+}
+.products_deletebtn{
+    background-color: #D2122E;
+    padding:3px 25px;
+    font-size: 1.3rem;
+    color:white;
+    border:none;
+    cursor: pointer;
+    border-radius:5px;
+}
+.products_addbtn{
+    background-color: #fd5c63;
+    border: none;
+    color:white;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    padding: 3px 5px;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+/* CATEGORIES*/
+.categories{
+    font-family: "Open sans";
+}
+.categories_name{
+    display: block;
+}
+#category_name, .categories_parent{
+    width:35%;
+    height:7%;
+    font-size: 1.2rem;
+    border:1px solid lightgrey;
+}
+#category_name{
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.categories_parent{
+    height:7.6%;
+}
+.categories_properties{
+    margin:0;
+    margin-top:10px;
+}
+.categories_addpropertybtn, .catogories_savebtn{
+    font-size:1.3rem;
+    display: block;
+    margin-bottom: 20px;
+    border:1px solid lightgrey;
+    cursor:pointer;
+}
+.categories_addpropertybtn{
+    background-color: white;
+    padding: 3px 6px;
+    width: 200px;
+}
+.catogories_savebtn{
+    background-color: #1F75FE;
+    padding: 2px 15px;
+    margin-bottom:50px;
+    color:white;
+    border-radius: 5px;
+}
+.categories_table{
+    width:72%;
+    border-collapse: collapse;
+    
+}
+.categories_tablecolumn{
+   font-size: 1.3rem;
+   color:#808080;
+   text-align: start;
+   border-bottom: 1px solid #808080;
+}
+.categories_table td{
+    padding-top: 20px;
+}
+.categories_editbtn{
+    margin-right:10px;
+    background-color: #0CAFFF;
+    color:white;
+    border:none;
+    font-size: 1.3rem;
+    padding:3px 25px;
+    border-radius:5px;
+    cursor: pointer;
+}
+.categories_deletebtn{
+    background-color: #D2122E;
+    padding:3px 25px;
+    font-size: 1.3rem;
+    color:white;
+    border:none;
+    cursor: pointer;
+    border-radius:5px;
+}
+
+/*ORDERS*/
+.order{
+    font-family: "Open sans";
+}
+.orders_table{
+    margin-top: 20px;
+    border-collapse:collapse;
+    width:80%;
+    text-align: start;
+}
+.orders_table thead > tr> th{
+    font-size: 1.3rem;
+   color:#808080;
+   text-align: start;
+   border-bottom: 1px solid #808080;
+   text-align: start;
+}
+.orders_table tbody > tr > td{
+    padding-top: 20px;
+    font-size: 1rem;
+    font-weight:600;
+}
+.orders > h2{
+margin-top:25px;
+color:#318CE7;
+}
+
+/*ADMINS */
+.admins {
+    font-family:"Open sans";
+}
+.admins > h2{
+    margin-bottom:5px;
+    font-weight: 400;
+}
+.admins  h1, .admins_admins > h3{
+    font-weight: 400;
+}
+.admins input{
+    font-size: 1.3rem;
+    width: 50%;
+    height:7%;
+    margin-right:8px;
+    border:none;
+    border:2px solid #0a2351;
+}
+.admins_addbtn{
+    font-size:1.3rem;
+    padding:12px 20px;
+    background-color:#fd5c63;
+    color:white;
+    border:none;
+    border-radius: 9px;
+}
+.admins_admins > h3{
+    padding-bottom:10px;
+    border-bottom:1px solid #808080;
+    margin-bottom: 10px;
+    width:64.5%;
+}
+.admins_admin{
+    display: flex;
+    justify-content:space-between;
+    max-width:64.5%;
+    margin-top:0;
+}
+.admins_admin > p{
+    margin-top:0;
+}
+.admin_deletebtn{
+    background-color: #D2122E;
+    padding:3px 25px;
+    font-size: 1.3rem;
+    color:white;
+    border:none;
+    cursor: pointer;
+    border-radius:5px;
+}
+
+/*EDIT PRODUCTS*/
+.editproduct{
+    font-family: "Open sans";
+}
+.editproduct > h2{
+    margin-top:30px;
+}
+.editproduct label{
+    display: block;
+    color:#484848;
+}
+.editproduct input[name="editproduct_dropdown"]{
+    width:100%;
+    height:36px;
+    border: none;
+    border:1px solid silver;
+    margin-bottom:12px;
+    font-size:1.3rem;
+    padding-left:15px;
+}
+.editproduct_photos{
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-bottom:30px;
+    gap:20px;
+}
+.editproduct_photo{
+    width: 140px;
+    height:200px;
+    border: 1px solid silver;
+    padding:10px;
+}
+.editproduct_photo > img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+input[name="editproduct_photoupload"]{
+    display: none;
+}
+.editproduct_photoupload{
+    text-align: center;
+    padding-top:50%;
+    border: 1px solid silver;
+    box-sizing: border-box;
+    width: 150px;
+    height:220px;
+    cursor: pointer;
+
+}
+textarea[name="editproduct_description"]{
+    font-size: 1.3rem;
+}
+.editproduct_savebtn{
+    font: 1.5rem "Open sans";
+    background-color: #1F75FE;
+    padding: 2px 15px;
+    margin-bottom: 50px;
+    color: white;
+    border-radius: 5px;
+    border:none;
+    cursor: pointer;
+    display: block;
+}
+.fa-plus{
+    color: #fd5c63;
+}
+.page{
+    width:80%;
+}
+
+/*ADDPROPERTIES */
+.AddProperties_property input{
+    width:31%;
+    height:45px;
+    margin-right:10px;
+    border: none;
+    border: 2px solid silver;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+.AddProperties_property button{
+    height: 50px;
+    font-size: 1.3rem;
+    border: none;
+    background-color: #fd5c63;
+    color:white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* EDIT CATEGORIES*/
+.editCategories_cancelbtn, .editCategories_savebtn{
+    height: 50px;
+    font-size: 1.3rem;
+    border: none;
+    background-color: grey;
+    color:white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 15px;;
+}
+.editCategories_savebtn{
+    background-color:#318CE7;
+    padding: 12px;
+}
+
+/* MODAL*/
+.modal{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    top:0;
+    left:0;
+    color:black;
+    position: absolute;
+    background:hsla(341, 18%, 4%, 0.8);
+    height:100vh;
+    width: 98.5vw;
+    overflow: hidden;
+}
+.modal> div > svg{
+    width:50px;
+    height: 50px;
+    color: #03C04A;
+    margin-top: 0;
+}
+.modal > div{
+    background-color: whitesmoke;
+    border-radius: 5px;
+    width:300px;
+    text-align: center;
+    padding-bottom: 10px;
+}
